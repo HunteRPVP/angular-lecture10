@@ -1,0 +1,11 @@
+<p>mod2 works!</p>
+
+<p> {{ mod2.userJson | json}} </p>
+
+<p> {{ mod2.user | json}} </p>
+
+<p> {{ mod2.post | async | json }} </p>
+
+<ul>
+    <li *ngFor="let post of mod2.posts | async"> {{ post | json }}</li>
+</ul>

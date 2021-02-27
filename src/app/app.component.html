@@ -1,0 +1,23 @@
+<router-outlet></router-outlet>
+<ul>
+    <li><a href="https://metanit.com/web/angular2/7.2.php">Создание ссылок</a></li>
+    <li><a routerLink="/mod1">mod1</a></li>
+    <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Главная страница</a></li>
+    <li><a [routerLink]="['/mod2']">mod2</a></li>
+    <li><a [routerLink]="['/mod1', 'com11']">mod1/com11</a></li>
+    <li><a [routerLink]="['/mod1', '1']">mod1/1</a></li>
+    <li><a [routerLink]="['/mod1', '2' , 'qwe']">mod1/2</a></li>
+    <li><a [routerLink]="['/mod1', '3', 'asd']">mod1/3</a></li>
+    <li><a [routerLink]="['/mod1', '1']" [queryParams]="{q1: 1}">mod1/1?q1</a></li>
+    <li><a [routerLink]="['/mod1', '2']" [queryParams]="{q1: 2}">mod1/2?q2</a></li>
+    <li><a [routerLink]="['/mod1', '3']" [queryParams]="{q1: 3}">mod1/3?q3</a></li>
+    <li><a [routerLink]="['/mod1', '1', '1', '1']" [queryParams]="{q1: 1}">mod1/1/1/1?q1</a></li>
+    <li><a [routerLink]="['/mod1', '2', '2', '2']" [queryParams]="{q1: 2}">mod1/2/2/2?q2</a></li>
+    <li><a [routerLink]="['/mod1', '3', '3', '3']" [queryParams]="{q1: 3}">mod1/3/3/3?q3</a></li>
+    <li><button type="button" (click)="goToMod1()">mod1</button></li>
+    <li><button type="button" (click)="goToMod2()">mod2</button></li>
+    <li><button type="button" (click)="goToMod3()">mod3</button></li>
+    <li><button type="button" (click)="goToMod11111()">mod1/1/1/1?q1</button></li>
+    <li><button type="button" (click)="goToMod13333()">mod1/3/3/3?q3</button></li>
+</ul>
+<!-- <app-mod2></app-mod2> -->
